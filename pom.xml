@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IKE Java Support
+  ════════════════
+
+  Shared, enforced-zero-dependency value types for the IKE Network —
+  the home for compiler-visible constants and controlled-vocabulary
+  enums used across IKE tooling:
+
+    - ConstantBackedEnum — an enum whose constants carry a stable
+      string literal, for use where a compile-time String constant
+      is required (annotation arguments, and the like).
+    - EnumDefinition — a ConstantBackedEnum that also carries a
+      human-readable term and its definition.
+    - ReleasePolicy — the release-cascade policy ladder.
+
+  Standalone Tier 0 artifact, parent ike-base-parent, Java 21 — the
+  lowest baseline among its consumers (the version-management
+  extension and the release orchestrator). A maven-enforcer rule
+  keeps the shipped artifact free of all non-JDK dependencies.
+
+  Build:    mvn verify
+  Artifact: network.ike:ike-java-support:<version>
+  Tracked by IKE-Network/ike-issues#498.
+-->
+<project xmlns="http://maven.apache.org/POM/4.1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.1.0
+                             http://maven.apache.org/xsd/maven-4.1.0.xsd">
+    <modelVersion>4.1.0</modelVersion>
+
+    <parent>
+        <groupId>network.ike</groupId>
+        <artifactId>ike-base-parent</artifactId>
+        <version>7</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>network.ike</groupId>
+    <artifactId>ike-java-support</artifactId>
+    <version>1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>IKE Java Support</name>
+    <description>
+        Shared, enforced-zero-dependency value types for the IKE
+        Network: ConstantBackedEnum for compiler-visible constants,
+        EnumDefinition for controlled-vocabulary enums, and the
+        ReleasePolicy release-cascade policy ladder. See
+        IKE-Network/ike-issues#498.
+    </description>
+    <url>https://github.com/IKE-Network/ike-java-support</url>
+    <inceptionYear>2026</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>IKE Network</name>
+        <url>https://ike.network</url>
+    </organization>
+
+    <scm>
+        <connection>scm:git:https://github.com/IKE-Network/ike-java-support.git</connection>
+        <developerConnection>scm:git:git@github.com:IKE-Network/ike-java-support.git</developerConnection>
+        <url>https://github.com/IKE-Network/ike-java-support</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <site>
+            <id>ike-site</id>
+            <url>https://ike.network/${project.artifactId}/</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>21</maven.compiler.release>
+    </properties>
+
+    <!-- Test scope only. The maven-enforcer rule below fails the build
+         on any compile- or runtime-scope dependency: the shipped
+         artifact carries nothing but the JDK. -->
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${org.junit.jupiter·junit-jupiter}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
+            <!-- Enforce the zero-dependency contract: nothing but the
+                 JDK may reach the shipped artifact. Build-only scopes
+                 (test, provided) are unaffected. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>enforce-zero-dependencies</id>
+                        <phase>validate</phase>
+                        <goals><goal>enforce</goal></goals>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <excludes>
+                                        <exclude>*:*:*:*:compile</exclude>
+                                        <exclude>*:*:*:*:runtime</exclude>
+                                    </excludes>
+                                    <message>
+                                        ike-java-support ships zero non-JDK dependencies:
+                                        no compile- or runtime-scope dependency is permitted.
+                                    </message>
+                                </bannedDependencies>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
