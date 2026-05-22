@@ -5,5 +5,5 @@
  * {@code maven-enforcer} build keeps it that way.
  */
 module network.ike.support {
-    exports network.ike.support;
+    exports network.ike.support.enums;
 }

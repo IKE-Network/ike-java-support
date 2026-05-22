@@ -94,6 +94,12 @@
             <version>${org.junit.jupiter·junit-jupiter}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${org.assertj·assertj-core}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>

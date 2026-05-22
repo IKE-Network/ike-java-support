@@ -1,4 +1,4 @@
-package network.ike.support;
+package network.ike.support.enums;
 
 /**
  * A {@link ConstantBackedEnum} that also carries a human-readable term
@@ -7,9 +7,9 @@ package network.ike.support;
  * <p>An {@code EnumDefinition} expresses a controlled-vocabulary entry
  * as an enum constant: the {@link #term()} is the word being defined,
  * the {@link #definition()} states what it means, and the inherited
- * {@link #constant()} is the stable literal the term is encoded as —
+ * {@link #literalName()} is the stable literal the term is encoded as —
  * in a POM property, on the command line, and so on. For many
- * vocabularies the term and the backing literal coincide.
+ * vocabularies the term and the literal coincide.
  *
  * @since 1
  */
