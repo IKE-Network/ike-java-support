@@ -1,5 +1,10 @@
 # IKE Java Support
 
+[![Maven Central](https://img.shields.io/maven-central/v/network.ike/ike-java-support)](https://central.sonatype.com/artifact/network.ike/ike-java-support)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Documentation](https://img.shields.io/badge/docs-ike.network%2Fike--java--support-blue)](https://ike.network/ike-java-support/)
+[![IKE Network](https://img.shields.io/badge/IKE-Network-green)](https://ike.network/)
+
 Shared, enforced-zero-dependency value types for the IKE Network.
 
 `ike-java-support` is the home for small, compiler-visible value types

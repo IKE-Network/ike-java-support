@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site xmlns="http://maven.apache.org/SITE/2.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SITE/2.0.0
+      https://maven.apache.org/xsd/site-2.0.0.xsd"
+      name="IKE Java Support">
+
+    <skin>
+        <groupId>org.sentrysoftware.maven</groupId>
+        <artifactId>sentry-maven-skin</artifactId>
+        <version>7.0.00</version>
+    </skin>
+
+    <custom>
+        <bodyClass>sentry-green</bodyClass>
+        <checkImageLinks>false</checkImageLinks>
+        <keywords>IKE Network, Java support, value types, ConstantBackedEnum, EnumDefinition, ReleasePolicy</keywords>
+    </custom>
+
+    <!-- Text banner — no per-repo logo asset (lightweight Tier 0 leaf site). -->
+    <bannerLeft name="IKE Java Support" href="https://ike.network/"/>
+
+    <bannerRight name="GitHub &lt;i class='fa-brands fa-github'&gt;&lt;/i&gt;"
+        href="https://github.com/IKE-Network/ike-java-support"/>
+
+    <publishDate format="yyyy-MM-dd"/>
+
+    <body>
+        <breadcrumbs>
+            <item name="IKE" href="https://ike.network/"/>
+            <item name="IKE Java Support" href="index.html"/>
+        </breadcrumbs>
+        <links>
+            <item name="GitHub" href="https://github.com/IKE-Network/ike-java-support"/>
+        </links>
+        <menu name="Documentation">
+            <item name="Overview" href="index.html"/>
+        </menu>
+        <menu name="Reports" ref="reports"/>
+    </body>
+</site>
