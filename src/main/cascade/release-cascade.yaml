@@ -1,0 +1,29 @@
+# release-cascade.yaml — ike-java-support's edges in the IKE
+# release cascade (IKE-Network/ike-issues#420, #498).
+#
+# Standalone Tier 0 artifact: parents ike-base-parent (Tier 0 apex,
+# parent-inheritance only — not cascade-tracked yet per
+# IKE-Network/ike-issues#462) and ships zero non-JDK dependencies.
+# The canonical ${G·A} version pin (U+00B7) that the cascade aligns
+# is derived mechanically from each downstream's coordinates
+# (IKE-Network/ike-issues#496).
+#
+#   downstream — foundation projects that consume this artifact's
+#                jar as a compile-scope dependency; the cascade
+#                executor walks forward to each after a release here.
+#                ike-version-management-extension declares
+#                network.ike:ike-java-support in its <dependencies>;
+#                ike-tooling consumes it transitively through that
+#                extension.
+#   head       — asserted positively: ike-java-support has no
+#                cascade-tracked upstream, so it is a head of the
+#                cascade (one of three Tier-0 heads, alongside
+#                ike-workspace-extension and ike-version-management-extension).
+
+schema: 1
+head: true
+
+downstream:
+  - groupId: network.ike.tooling
+    artifactId: ike-version-management-extension
+    url: https://github.com/IKE-Network/ike-version-management-extension.git
