@@ -49,7 +49,7 @@
         ReleasePolicy release-cascade policy ladder. See
         IKE-Network/ike-issues#498.
     </description>
-    <url>https://github.com/IKE-Network/ike-java-support</url>
+    <url>https://ike.network/ike-java-support/</url>
     <inceptionYear>2026</inceptionYear>
 
     <licenses>

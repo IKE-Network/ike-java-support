@@ -30,9 +30,9 @@
             <item name="IKE" href="https://ike.network/"/>
             <item name="IKE Java Support" href="index.html"/>
         </breadcrumbs>
-        <links>
-            <item name="GitHub" href="https://github.com/IKE-Network/ike-java-support"/>
-        </links>
+        <!-- GitHub link lives in <bannerRight> only; the per-project
+             <links> GitHub item was redundant chrome — bannerRight
+             is the canonical placement. IKE-Network/ike-issues#521. -->
         <menu name="Documentation">
             <item name="Overview" href="index.html"/>
         </menu>
