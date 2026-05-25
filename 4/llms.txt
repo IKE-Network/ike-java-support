@@ -1,0 +1,27 @@
+# IKE Java Support
+
+> Shared, enforced-zero-dependency value types for the IKE
+> Network: ConstantBackedEnum for compiler-visible constants,
+> EnumDefinition for controlled-vocabulary enums, and the
+> ReleasePolicy release-cascade policy ladder. See
+> IKE-Network/ike-issues#498.
+
+## Documentation
+
+- [IKE Java Support](https://ike.network/ike-java-support/index.html.md)
+
+## Other
+
+
+## Reports
+
+- [Project Dependencies](https://ike.network/ike-java-support/dependencies.html.md)
+- [Maven Coordinates](https://ike.network/ike-java-support/dependency-info.html.md)
+- [Project Distribution Management](https://ike.network/ike-java-support/distribution-management.html.md)
+- [Project Licenses](https://ike.network/ike-java-support/licenses.html.md)
+- [Project Plugins](https://ike.network/ike-java-support/plugins.html.md)
+- [Source Code Management](https://ike.network/ike-java-support/scm.html.md)
+- [Project Summary](https://ike.network/ike-java-support/summary.html.md)
+- [Project Team](https://ike.network/ike-java-support/team.html.md)
+- [Project Information](https://ike.network/ike-java-support/project-info.html.md)
+- [Generated Reports](https://ike.network/ike-java-support/project-reports.html.md)
