@@ -1,7 +1,7 @@
 ---
 date_published: 1980-01-31
 date_modified: 1980-01-31
-canonical_url: https://github.com/IKE-Network/ike-java-support/summary.html
+canonical_url: https://ike.network/ike-java-support/summary.html
 ---
 
 # Project Summary
@@ -12,7 +12,7 @@ canonical_url: https://github.com/IKE-Network/ike-java-support/summary.html
 | --- | --- |
 | Name | IKE Java Support |
 | Description | Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498. |
-| Homepage | [https://github.com/IKE-Network/ike-java-support](https://github.com/IKE-Network/ike-java-support)[1] |
+| Homepage | [https://ike.network/ike-java-support/](https://ike.network/ike-java-support/)[1] |
 
 ## [Project Organization](#project-organization)
 
@@ -27,6 +27,6 @@ canonical_url: https://github.com/IKE-Network/ike-java-support/summary.html
 | --- | --- |
 | GroupId | network.ike |
 | ArtifactId | ike-java-support |
-| Version | 2 |
+| Version | 3 |
 | Type | jar |
 | Java Version | - |

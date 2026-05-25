@@ -1,7 +1,7 @@
 ---
 date_published: 1980-01-31
 date_modified: 1980-01-31
-canonical_url: https://github.com/IKE-Network/ike-java-support/project-reports.html
+canonical_url: https://ike.network/ike-java-support/project-reports.html
 ---
 
 # Generated Reports

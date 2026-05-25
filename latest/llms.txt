@@ -8,20 +8,20 @@
 
 ## Documentation
 
-- [IKE Java Support](https://github.com/IKE-Network/ike-java-support/index.html.md)
+- [IKE Java Support](https://ike.network/ike-java-support/index.html.md)
 
 ## Other
 
 
 ## Reports
 
-- [Project Dependencies](https://github.com/IKE-Network/ike-java-support/dependencies.html.md)
-- [Maven Coordinates](https://github.com/IKE-Network/ike-java-support/dependency-info.html.md)
-- [Project Distribution Management](https://github.com/IKE-Network/ike-java-support/distribution-management.html.md)
-- [Project Licenses](https://github.com/IKE-Network/ike-java-support/licenses.html.md)
-- [Project Plugins](https://github.com/IKE-Network/ike-java-support/plugins.html.md)
-- [Source Code Management](https://github.com/IKE-Network/ike-java-support/scm.html.md)
-- [Project Summary](https://github.com/IKE-Network/ike-java-support/summary.html.md)
-- [Project Team](https://github.com/IKE-Network/ike-java-support/team.html.md)
-- [Project Information](https://github.com/IKE-Network/ike-java-support/project-info.html.md)
-- [Generated Reports](https://github.com/IKE-Network/ike-java-support/project-reports.html.md)
+- [Project Dependencies](https://ike.network/ike-java-support/dependencies.html.md)
+- [Maven Coordinates](https://ike.network/ike-java-support/dependency-info.html.md)
+- [Project Distribution Management](https://ike.network/ike-java-support/distribution-management.html.md)
+- [Project Licenses](https://ike.network/ike-java-support/licenses.html.md)
+- [Project Plugins](https://ike.network/ike-java-support/plugins.html.md)
+- [Source Code Management](https://ike.network/ike-java-support/scm.html.md)
+- [Project Summary](https://ike.network/ike-java-support/summary.html.md)
+- [Project Team](https://ike.network/ike-java-support/team.html.md)
+- [Project Information](https://ike.network/ike-java-support/project-info.html.md)
+- [Generated Reports](https://ike.network/ike-java-support/project-reports.html.md)

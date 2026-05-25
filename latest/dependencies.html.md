@@ -1,7 +1,7 @@
 ---
 date_published: 1980-01-31
 date_modified: 1980-01-31
-canonical_url: https://github.com/IKE-Network/ike-java-support/dependencies.html
+canonical_url: https://ike.network/ike-java-support/dependencies.html
 ---
 
 # Project Dependencies
@@ -47,11 +47,11 @@ The following is a list of test dependencies for this project. These dependencie
 
 ## [Dependency Tree](#dependency-tree)
 
-- network.ike:ike-java-support:jar:2 ** 
+- network.ike:ike-java-support:jar:3 ** 
   
   | IKE Java Support |
   | --- |
-  | **Description: **Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498. **URL: **[https://github.com/IKE-Network/ike-java-support](https://github.com/IKE-Network/ike-java-support)[11] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[2] |
+  | **Description: **Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498. **URL: **[https://ike.network/ike-java-support/](https://ike.network/ike-java-support/)[11] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[2] |
   
     - org.junit.jupiter:junit-jupiter:jar:6.0.0 (test) ** 
       
