@@ -60,7 +60,19 @@ public enum TypedMarker implements EnumDefinition {
             "Terminal facet marker for a release-policy property. A "
                     + "property named <G>__GA__<A>__POLICY declares the "
                     + "ReleasePolicy a project follows when the G:A "
-                    + "upstream releases. Appears as __POLICY.");
+                    + "upstream releases. Appears as __POLICY."),
+
+    /** Terminal facet marking the legacy short-name alias(es) for a coordinate. */
+    ALIAS(TypedMarker.NAME_ALIAS, Role.FACET,
+            "Terminal facet marker for a legacy short-name alias "
+                    + "declaration. A property named <G>__GA__<A>__ALIAS "
+                    + "carries a comma-separated list of legacy short names "
+                    + "(e.g., ike-tooling.version, junit-jupiter.version) "
+                    + "that alias the canonical <G>__GA__<A>__VERSION pin. "
+                    + "Tools (vm-ext alias-injection, scaffold-rewrite, "
+                    + "release-publish indirection bake) read this metadata "
+                    + "to materialize the indirection. Appears as __ALIAS. "
+                    + "See IKE-Network/ike-issues#526.");
 
     /**
      * Where in a property name a typed marker sits. Selects the shape
@@ -79,6 +91,8 @@ public enum TypedMarker implements EnumDefinition {
     public static final String NAME_VERSION = "VERSION";
     /** Mirror constant for {@link #POLICY}. */
     public static final String NAME_POLICY  = "POLICY";
+    /** Mirror constant for {@link #ALIAS}. */
+    public static final String NAME_ALIAS   = "ALIAS";
 
     private final String literalName;
     private final Role role;

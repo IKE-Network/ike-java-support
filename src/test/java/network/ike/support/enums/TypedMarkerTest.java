@@ -14,11 +14,11 @@ import org.junit.jupiter.api.Test;
 class TypedMarkerTest {
 
     @Test
-    void familyHasThreeMarkers() {
-        // GA, VERSION, POLICY. Future additions (GAV, BOM, SCOPE, …)
-        // will bump this; the test is intentionally a tripwire so a
-        // forgotten test update flags itself.
-        assertThat(TypedMarker.values()).hasSize(3);
+    void familyHasFourMarkers() {
+        // GA, VERSION, POLICY, ALIAS (#526). Future additions (GAV,
+        // BOM, SCOPE, …) will bump this; the test is intentionally a
+        // tripwire so a forgotten test update flags itself.
+        assertThat(TypedMarker.values()).hasSize(4);
     }
 
     @Test
@@ -38,7 +38,8 @@ class TypedMarkerTest {
                 .containsEntry("GA",      TypedMarker.GA)
                 .containsEntry("VERSION", TypedMarker.VERSION)
                 .containsEntry("POLICY",  TypedMarker.POLICY)
-                .hasSize(3);
+                .containsEntry("ALIAS",   TypedMarker.ALIAS)
+                .hasSize(4);
     }
 
     @Test
@@ -57,6 +58,12 @@ class TypedMarkerTest {
     void policyIsAFacetAndRendersTerminal() {
         assertThat(TypedMarker.POLICY.role()).isEqualTo(TypedMarker.Role.FACET);
         assertThat(TypedMarker.POLICY.token()).isEqualTo("__POLICY");
+    }
+
+    @Test
+    void aliasIsAFacetAndRendersTerminal() {
+        assertThat(TypedMarker.ALIAS.role()).isEqualTo(TypedMarker.Role.FACET);
+        assertThat(TypedMarker.ALIAS.token()).isEqualTo("__ALIAS");
     }
 
     @Test
