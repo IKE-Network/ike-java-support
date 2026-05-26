@@ -27,6 +27,6 @@ canonical_url: https://ike.network/ike-java-support/summary.html
 | --- | --- |
 | GroupId | network.ike |
 | ArtifactId | ike-java-support |
-| Version | 5 |
+| Version | 6 |
 | Type | jar |
 | Java Version | - |
