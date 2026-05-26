@@ -38,7 +38,7 @@
 
     <groupId>network.ike</groupId>
     <artifactId>ike-java-support</artifactId>
-    <version>7</version>
+    <version>8-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>IKE Java Support</name>
