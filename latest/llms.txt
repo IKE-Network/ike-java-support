@@ -19,6 +19,7 @@
 - [Maven Coordinates](https://ike.network/ike-java-support/dependency-info.html.md)
 - [Project Distribution Management](https://ike.network/ike-java-support/distribution-management.html.md)
 - [Project Licenses](https://ike.network/ike-java-support/licenses.html.md)
+- [Project Plugin Management](https://ike.network/ike-java-support/plugin-management.html.md)
 - [Project Plugins](https://ike.network/ike-java-support/plugins.html.md)
 - [Source Code Management](https://ike.network/ike-java-support/scm.html.md)
 - [Project Summary](https://ike.network/ike-java-support/summary.html.md)

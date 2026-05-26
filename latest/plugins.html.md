@@ -19,11 +19,10 @@ canonical_url: https://ike.network/ike-java-support/plugins.html
 | org.apache.maven.plugins | [maven-resources-plugin](https://maven.apache.org/plugins/maven-resources-plugin/)[9] | 3.3.1 |
 | org.apache.maven.plugins | [maven-site-plugin](https://maven.apache.org/plugins/maven-site-plugin/)[10] | 3.21.0 |
 | org.apache.maven.plugins | [maven-surefire-plugin](https://maven.apache.org/surefire/maven-surefire-plugin/)[11] | 3.5.3 |
-| org.jreleaser | [jreleaser-maven-plugin](https://github.com/jreleaser/jreleaser)[12] | 1.24.0 |
 
 # Project Report Plugins
 
 | GroupId | ArtifactId | Version |
 | --- | --- | --- |
-| org.apache.maven.plugins | [maven-javadoc-plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/)[13] | 3.11.2 |
-| org.apache.maven.plugins | [maven-project-info-reports-plugin](https://maven.apache.org/plugins/maven-project-info-reports-plugin/)[14] | 3.9.0 |
+| org.apache.maven.plugins | [maven-javadoc-plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/)[12] | 3.11.2 |
+| org.apache.maven.plugins | [maven-project-info-reports-plugin](https://maven.apache.org/plugins/maven-project-info-reports-plugin/)[13] | 3.9.0 |
