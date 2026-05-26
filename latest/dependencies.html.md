@@ -21,7 +21,7 @@ The following is a list of provided dependencies for this project. These depende
 
 | GroupId | ArtifactId | Version | Classifier | Type | Licenses |
 | --- | --- | --- | --- | --- | --- |
-| network.ike | [ike-base-parent](https://ike.network/ike-base-parent/)[5] | 8 | site-theme | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[2] |
+| network.ike | [ike-base-parent](https://ike.network/ike-base-parent/)[5] | 15 | site-theme | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[2] |
 
 # Project Transitive Dependencies
 
@@ -47,7 +47,7 @@ The following is a list of test dependencies for this project. These dependencie
 
 ## [Dependency Tree](#dependency-tree)
 
-- network.ike:ike-java-support:jar:8 ** 
+- network.ike:ike-java-support:jar:9 ** 
   
   | IKE Java Support |
   | --- |
@@ -112,7 +112,7 @@ The following is a list of test dependencies for this project. These dependencie
             | Byte Buddy (without dependencies) |
             | --- |
             | **Description: **Byte Buddy is a Java library for creating Java classes at run time. This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space. **URL: **[https://bytebuddy.net/byte-buddy](https://bytebuddy.net/byte-buddy)[6] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[2] |
-    - network.ike:ike-base-parent:zip:site-theme:8 (provided) ** 
+    - network.ike:ike-base-parent:zip:site-theme:15 (provided) ** 
       
       | IKE Base Parent |
       | --- |
@@ -135,7 +135,7 @@ The following is a list of test dependencies for this project. These dependencie
 | byte-buddy-1.15.11.jar | 8.5 MB | 5890 | - | - | - | - |
 |    • Root | - | 2950 | 2897 | 38 | 1.5 | Yes |
 |    • Versioned | - | 2940 | 2898 | 39 | 1.8 | Yes |
-| ike-base-parent-8-site-theme.zip | 3.4 kB | - | - | - | - | - |
+| ike-base-parent-15-site-theme.zip | 3.4 kB | - | - | - | - | - |
 | apiguardian-api-1.1.2.jar | 6.8 kB | 9 | 3 | 2 | 1.6 | Yes |
 | assertj-core-3.27.3.jar | 1.4 MB | 881 | - | - | - | - |
 |    • Root | - | 877 | 838 | 27 | 1.8 | Yes |
