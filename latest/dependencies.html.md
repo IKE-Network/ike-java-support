@@ -47,7 +47,7 @@ The following is a list of test dependencies for this project. These dependencie
 
 ## [Dependency Tree](#dependency-tree)
 
-- network.ike:ike-java-support:jar:7 ** 
+- network.ike:ike-java-support:jar:8 ** 
   
   | IKE Java Support |
   | --- |

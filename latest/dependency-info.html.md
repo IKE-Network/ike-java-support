@@ -12,14 +12,14 @@ canonical_url: https://ike.network/ike-java-support/dependency-info.html
 <dependency>
   <groupId>network.ike</groupId>
   <artifactId>ike-java-support</artifactId>
-  <version>7</version>
+  <version>8</version>
 </dependency>
 ```
 
 ## [Apache Ivy](#apache-ivy)
 
 ```
-<dependency org="network.ike" name="ike-java-support" rev="7">
+<dependency org="network.ike" name="ike-java-support" rev="8">
   <artifact name="ike-java-support" type="jar" />
 </dependency>
 ```
@@ -28,24 +28,24 @@ canonical_url: https://ike.network/ike-java-support/dependency-info.html
 
 ```
 @Grapes(
-@Grab(group='network.ike', module='ike-java-support', version='7')
+@Grab(group='network.ike', module='ike-java-support', version='8')
 )
 ```
 
 ## [Gradle/Grails](#gradle-grails)
 
 ```
-implementation 'network.ike:ike-java-support:7'
+implementation 'network.ike:ike-java-support:8'
 ```
 
 ## [Scala SBT](#scala-sbt)
 
 ```
-libraryDependencies += "network.ike" % "ike-java-support" % "7"
+libraryDependencies += "network.ike" % "ike-java-support" % "8"
 ```
 
 ## [Leiningen](#leiningen)
 
 ```
-[network.ike/ike-java-support "7"]
+[network.ike/ike-java-support "8"]
 ```
